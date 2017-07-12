@@ -1,0 +1,22 @@
+Code Formatting Standards
+-------------------------
+ * Identifiers (variables and function names) should use all lowercase
+   characters, and separate words with underscores.
+ * No tab characters should appear anywhere except in the Makefile. In
+   emacs, you can set this with the following line in .emacs:
+     (setq-default indent-tabs-mode nil)
+   and with VIM it can be set in .vimrc as follows:
+     set expandtab
+ * Match expressions should be on their own line, with patterns aligned
+   with the 'm' in 'match'.
+ * Every pattern in a match expression, including the first, should
+   start with a '|' character.
+ * Large chunks of commented code should not stick around in the
+   repository for long. We can retrieve old code from Subversion if
+   needed. There's no need to keep it in the current files.
+ * Lines should not end with spaces.
+ * Text files should have the svn:eol-style property set to native.
+ * Binary operators should have spaces on either side.
+ * Commas should be followed by spaces.
+ * Top-level declarations should begin at the left margin.
+ * Use parentheses rather than begin/end.

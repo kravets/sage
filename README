@@ -1,0 +1,38 @@
+
+The Sage Typechecker and Interpreter.
+
+Available from http://www.cs.ucsc.edu/~kknowles/sage
+
+Disclaimer: This software is a work-in-progress research prototype,
+with many rough edges and features which may not work as expected.
+
+Sage is distributed under the GPL as described in the file COPYING, while the
+Simplify binaries are distributed under the Java Programming Toolkit software
+license, available at http://www.hpl.hp.com/downloads/crl/jtk/agreement.html
+
+BUILD INSTRUCTIONS
+
+Run "make". If all goes well, you should have a sage executable.
+
+Two copies of the binary executable of the Simplify theorem prover are
+included. For sage to run correctly (without the -nosimplify flag), an
+executable named "Simplify" must exist.
+
+On Linux, the following should work:
+
+  ln -s Simplify-1.5.4.linux Simplify
+
+On Windows, this is better:
+
+  cp Simplify-1.5.4.exe.win Simplify.exe
+
+RUNNING INSTRUCTIONS
+
+To type check and run a program, use "sage <filename>".
+A number of example programs are in the "tests" subdirectory.
+For example, try "sage tests/polylist.f"
+
+Running "sage -help" shows the command-line options, many of which are
+are for debugging purposes.
+
+
